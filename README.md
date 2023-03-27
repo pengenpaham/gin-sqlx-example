@@ -1,10 +1,21 @@
 # GIN SQLX EXAMPLE
 
-## Prerequisites
+Sample implementation `gin`, `postges` using `sqlx`.
+
+This project will create a database named `sampledb` along with a table named `Animal` :
+
+```
+sampledb=# SELECT * FROM animals;
+ id | name | age | description
+----+------+-----+-------------
+(0 rows)
+```
+
+## Prerequisites :
 
 - install `docker`
 
-## Running locally
+## Running :
 
 - `make environment`
 - create file `.env` based on `.env.sample`
@@ -12,7 +23,7 @@
 - app will running in port 8080!
   Note : you can use command `make help` for showing list available commands.
 
-## Testing
+## Testing Locally using curl :
 
 1. Create animal
 
